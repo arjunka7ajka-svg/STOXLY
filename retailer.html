@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STOXLY – Smart Inventory Exchange</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #1e1b4b, #020617);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      padding: 120px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+    header p {
+      max-width: 720px;
+      margin: 25px auto;
+      font-size: 1.2rem;
+      color: #c7d2fe;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 36px;
+      background: linear-gradient(135deg, #6366f1, #9333ea);
+      border-radius: 40px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .3s, box-shadow .3s;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(99,102,241,.4);
+    }
+    section {
+      padding: 90px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 40px 30px;
+      backdrop-filter: blur(12px);
+      transition: transform .4s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card i {
+      font-size: 2.5rem;
+      color: #818cf8;
+      margin-bottom: 20px;
+    }
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+    .card p { color: #cbd5f5; }
+    .how {
+      background: rgba(0,0,0,0.4);
+      border-radius: 30px;
+    }
+    .highlight {
+      background: linear-gradient(135deg, rgba(99,102,241,.25), rgba(168,85,247,.25));
+      border-radius: 24px;
+      padding: 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<header data-aos="fade-up">
+  <h1>STOXLY</h1>
+  <p>AI-powered Inter-Branch Stock Exchange platform that eliminates dead stock and fulfills demand where it matters.</p>
+  <a href="#" class="btn">Get Started</a>
+</header>
+
+<section>
+  <div class="grid">
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <i class="fa-solid fa-store"></i>
+      <h3>Register Branches</h3>
+      <p>Onboard all STOXLY-enabled stores across locations and monitor inventory centrally.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Rate of Sale Intelligence</h3>
+      <p>Tracks ROS continuously to identify shortages, surplus, and zero-sale products.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <i class="fa-solid fa-shuffle"></i>
+      <h3>Smart Stock Exchange</h3>
+      <p>Automatically matches donor and receiver stores to exchange stock without loss.</p>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="grid">
+    <div class="highlight" data-aos="zoom-in">
+      <h3>Dead Stock Detection</h3>
+      <p>Identifies zero-ROS items unsold for over 45 days and flags them for redistribution instead of discounts.</p>
+    </div>
+    <div class="highlight" data-aos="zoom-in" data-aos-delay="200">
+      <h3>Donor–Receiver Optimization</h3>
+      <p>Ensures the best donor store supplies the right receiver store while maintaining safety stock.</p>
+    </div>
+  </div>
+</section>
+
+<section data-aos="fade-up">
+  <h2 style="text-align:center;font-size:2.5rem;">Turn Dead Stock into Sales</h2>
+  <p style="text-align:center;max-width:700px;margin:20px auto;color:#c7d2fe;">
+    STOXLY helps retail brands move inventory intelligently across branches without overproduction or heavy discounting.
+  </p>
+  <div style="text-align:center;">
+    <a href="#" class="btn">Register Your Branches</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 STOXLY · Smart Inventory · Zero Waste
+</footer>
+
+<script>
+  AOS.init({ duration: 900, once: true });
+</script>
+
+</body>
+</html>

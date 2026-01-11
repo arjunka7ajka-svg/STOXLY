@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>STOXLY Admin – Smart Inventory Exchange</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:'Inter',sans-serif;
+background:radial-gradient(circle at top,#020617,#000);
+color:#fff;
+}
+
+/* HEADER */
+header{
+padding:90px 20px;
+text-align:center;
+background:linear-gradient(180deg,#020617,#020617dd);
+}
+header h1{
+font-size:4.2rem;
+font-weight:800;
+letter-spacing:3px;
+}
+header p{
+max-width:800px;
+margin:25px auto;
+font-size:1.25rem;
+color:#c7d2fe;
+}
+.btn{
+display:inline-block;
+padding:15px 40px;
+background:linear-gradient(135deg,#6366f1,#9333ea);
+border-radius:50px;
+color:white;
+font-weight:600;
+text-decoration:none;
+margin-top:30px;
+transition:.3s;
+}
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 18px 45px rgba(99,102,241,.45);
+}
+
+/* SECTIONS */
+section{
+padding:90px 20px;
+max-width:1300px;
+margin:auto;
+}
+h2{
+font-size:2.6rem;
+margin-bottom:15px;
+text-align:center;
+}
+.sub{
+text-align:center;
+color:#c7d2fe;
+max-width:800px;
+margin:0 auto 50px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+/* CARDS */
+.card{
+background:rgba(255,255,255,.07);
+backdrop-filter:blur(14px);
+border-radius:26px;
+padding:35px;
+transition:.35s;
+}
+.card:hover{transform:translateY(-8px)}
+.card i{
+font-size:2.5rem;
+color:#818cf8;
+margin-bottom:18px;
+}
+.card h3{margin-bottom:10px}
+.card p{color:#cbd5f5}
+
+/* TABLE */
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:30px;
+}
+th,td{
+padding:14px;
+border-bottom:1px solid rgba(255,255,255,.1);
+text-align:left;
+}
+th{color:#a5b4fc}
+
+/* AI PANEL */
+.ai{
+background:linear-gradient(135deg,rgba(99,102,241,.25),rgba(168,85,247,.25));
+border-radius:30px;
+padding:45px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:35px;
+border-top:1px solid rgba(255,255,255,.1);
+color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header data-aos="fade-up">
+<h1>STOXLY ADMIN</h1>
+<p>Centralized AI-Driven Control Panel for Inventory Exchange, Fashion Trends, Climate Intelligence & Multi-Store Optimization</p>
+<a href="#" class="btn">Launch Admin Console</a>
+</header>
+
+<!-- SYSTEM OVERVIEW -->
+<section>
+<h2>Admin Control Modules</h2>
+<p class="sub">Advanced access for top creators, controllers & inventory strategists.</p>
+
+<div class="grid">
+<div class="card" data-aos="fade-up">
+<i class="fa-solid fa-network-wired"></i>
+<h3>All Store Visibility</h3>
+<p>Live inventory data from all branches, including stock health, sales velocity & dead stock.</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<i class="fa-solid fa-envelope-open-text"></i>
+<h3>Inter-Store Requests</h3>
+<p>Approve, modify or auto-execute stock requests raised by retailers.</p>
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<i class="fa-solid fa-robot"></i>
+<h3>AI Decision Engine</h3>
+<p>AI recommends transfers, alerts slow movers & predicts demand spikes.</p>
+</div>
+</div>
+</section>
+
+<!-- STORE REQUEST TABLE -->
+<section data-aos="fade-up">
+<h2>Live Store Requests</h2>
+<p class="sub">Incoming stock needs from various cities and climates.</p>
+
+<table>
+<tr>
+<th>Store</th>
+<th>Location</th>
+<th>Requested Items</th>
+<th>Urgency</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>UrbanWear</td>
+<td>Mumbai</td>
+<td>Summer Dresses</td>
+<td>High</td>
+<td>AI Processing</td>
+</tr>
+<tr>
+<td>NorthStyle</td>
+<td>Delhi</td>
+<td>Winter Jackets</td>
+<td>Medium</td>
+<td>Approved</td>
+</tr>
+<tr>
+<td>StepUp</td>
+<td>Bangalore</td>
+<td>Sports Shoes</td>
+<td>High</td>
+<td>Pending</td>
+</tr>
+</table>
+</section>
+
+<!-- WEATHER + TREND AI -->
+<section>
+<h2>Weather-Based Fashion & Footwear Trends</h2>
+<p class="sub">AI matches climate conditions with trending apparel demand.</p>
+
+<div class="grid">
+<div class="card" data-aos="zoom-in">
+<i class="fa-solid fa-cloud-sun"></i>
+<h3>Hot & Humid Regions</h3>
+<p>Trending: Cotton dresses, breathable footwear, sandals.</p>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="150">
+<i class="fa-solid fa-snowflake"></i>
+<h3>Cold Regions</h3>
+<p>Trending: Hoodies, thermal wear, boots, sneakers.</p>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="300">
+<i class="fa-solid fa-cloud-rain"></i>
+<h3>Rainy Zones</h3>
+<p>Trending: Waterproof shoes, synthetic fabrics, light jackets.</p>
+</div>
+</div>
+</section>
+
+<!-- AI COMMAND CENTER -->
+<section>
+<div class="ai" data-aos="fade-up">
+<h2>AI Command Center</h2>
+<p class="sub">Real-time intelligence powered by STOXLY AI.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Demand Forecast</h3>
+<p>📈 Bangalore sportswear demand expected +23% next 14 days.</p>
+</div>
+
+<div class="card">
+<h3>Dead Stock Alert</h3>
+<p>⚠ 312 units unsold >45 days — auto redistribution recommended.</p>
+</div>
+
+<div class="card">
+<h3>Smart Transfer Suggestion</h3>
+<p>🔁 Move summer stock from Delhi → Mumbai (High ROI).</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 STOXLY · Admin Intelligence Platform · AI-Driven Retail Control
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({duration:900,once:true});
+</script>
+
+</body>
+</html>
