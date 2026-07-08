@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STOXLY Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<aside class="sidebar">
+
+<div class="brand">
+
+<img src="assets/logo.svg">
+
+<h2>STOXLY</h2>
+
+</div>
+
+<nav>
+
+<a href="#dashboard">
+<i class="fa-solid fa-chart-line"></i>
+Dashboard
+</a>
+
+<a href="#users">
+<i class="fa-solid fa-users"></i>
+Users
+</a>
+
+<a href="#inventory">
+<i class="fa-solid fa-boxes-stacked"></i>
+Inventory
+</a>
+
+<a href="#requests">
+<i class="fa-solid fa-arrow-right-arrow-left"></i>
+Requests
+</a>
+
+<a href="#" id="logoutBtn">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Logout
+</a>
+
+</nav>
+
+</aside>
+
+<main class="content">
+
+<header class="topbar">
+
+    <button id="menuBtn" class="menu-btn">
+
+☰
+
+</button>
+
+<h1>
+
+Admin Dashboard
+
+</h1>
+
+<div class="admin-avatar">
+
+AK
+
+</div>
+
+</header>
+
+<section class="cards">
+
+<div class="card">
+
+<h3>Total Users</h3>
+
+<h1 id="userCount">
+
+0
+
+</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Inventory</h3>
+
+<h1 id="inventoryCount">
+
+0
+
+</h1>
+
+</div>
+
+<div class="card">
+
+<h3>Pending Requests</h3>
+
+<h1 id="requestCount">
+
+0
+
+</h1>
+
+</div>
+
+</section>
+
+<div class="charts">
+
+<div class="chart-card">
+
+<h2>Inventory Analytics</h2>
+
+<canvas id="inventoryChart"></canvas>
+
+</div>
+
+<div class="chart-card">
+
+<h2>Request Analytics</h2>
+
+<canvas id="requestChart"></canvas>
+
+</div>
+
+</div>
+
+<div class="table-box">
+
+<h2>
+
+Transfer Requests
+
+</h2>
+
+<table id="requestTable">
+
+<thead>
+
+<tr>
+
+<th>User</th>
+
+<th>Product</th>
+
+<th>Qty</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</div>
+
+</main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

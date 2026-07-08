@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>STOXLY Retailer Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<aside class="sidebar">
+
+<div class="brand">
+
+<img src="assets/logo.svg">
+
+<h2>STOXLY</h2>
+
+</div>
+
+<nav>
+
+<a href="#">
+<i class="fa-solid fa-chart-line"></i>
+Dashboard
+</a>
+
+<a href="#">
+<i class="fa-solid fa-boxes-stacked"></i>
+Inventory
+</a>
+
+<a href="#">
+<i class="fa-solid fa-arrow-right-arrow-left"></i>
+Requests
+</a>
+
+<a href="#" id="logoutBtn">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</a>
+
+</nav>
+
+</aside>
+
+<main class="content">
+
+<header class="topbar">
+
+    <button id="menuBtn" class="menu-btn">
+
+☰
+
+</button>
+
+<h1>
+
+Retailer Dashboard
+
+</h1>
+
+<div class="admin-avatar" id="avatar">
+
+R
+
+</div>
+
+</header>
+
+<section class="cards">
+
+<div class="card">
+<h3>Total Products</h3>
+<h1 id="productCount">0</h1>
+</div>
+
+<div class="card">
+<h3>Total Quantity</h3>
+<h1 id="quantityCount">0</h1>
+</div>
+
+<div class="card">
+<h3>Pending Requests</h3>
+<h1 id="pendingCount">0</h1>
+</div>
+
+<div class="card">
+<h3>Low Stock</h3>
+<h1 id="lowStockCount">0</h1>
+</div>
+
+</section>
+
+<div class="toolbar">
+
+<input
+type="text"
+id="searchBox"
+placeholder="🔍 Search products...">
+
+<div class="toolbar-buttons">
+
+<button id="addProductBtn">
+
++ Add Product
+
+</button>
+
+<button id="requestProductBtn">
+
+📦 Request Product
+
+</button>
+
+</div>
+
+</div>
+
+<div class="charts">
+
+<div class="chart-card">
+
+<h2>Inventory Distribution</h2>
+
+<canvas id="inventoryChart"></canvas>
+
+</div>
+
+<div class="chart-card">
+
+<h2>Stock Quantity</h2>
+
+<canvas id="stockChart"></canvas>
+
+</div>
+
+</div>
+
+<!-- My Inventory -->
+
+<div class="table-box">
+
+    <h2>My Inventory</h2>
+
+    <table id="inventoryTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Product</th>
+
+                <th>Category</th>
+
+                <th>Quantity</th>
+
+                <th>Unit</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<!-- My Requests -->
+
+<div class="table-box">
+
+    <h2>My Requests</h2>
+
+    <table id="requestTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Product</th>
+
+                <th>Quantity</th>
+
+                <th>Reason</th>
+
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+</div>
+<!-- Add Product Modal -->
+
+<div class="modal" id="productModal">
+
+<div class="modal-content">
+
+<h2>Add New Product</h2>
+
+<form id="productForm">
+
+<input
+type="text"
+id="product"
+placeholder="Product Name"
+required>
+
+<input
+type="text"
+id="category"
+placeholder="Category"
+required>
+
+<input
+type="number"
+id="quantity"
+placeholder="Quantity"
+required>
+
+<input
+type="text"
+id="unit"
+placeholder="Unit (kg, pcs, box...)"
+required>
+
+<div class="modal-buttons">
+
+<button type="submit">
+
+Save Product
+
+</button>
+
+<button
+type="button"
+id="closeModal">
+
+Cancel
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+<!-- Request Product Modal -->
+
+<div class="modal" id="requestModal">
+
+<div class="modal-content">
+
+<h2>Request Product</h2>
+
+<form id="requestForm">
+
+<input
+type="text"
+id="requestProduct"
+placeholder="Product Name"
+required>
+
+<input
+type="number"
+id="requestQuantity"
+placeholder="Quantity"
+required>
+
+<textarea
+id="requestReason"
+placeholder="Reason"
+rows="4"
+required></textarea>
+
+<div class="modal-buttons">
+
+<button type="submit">
+
+Send Request
+
+</button>
+
+<button
+type="button"
+id="closeRequestModal">
+
+Cancel
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<div id="toast" class="toast">
+
+Product Added
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/retailer.js"></script>
+
+</body>
+
+</html>

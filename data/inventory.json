@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1783352521130,
+    "owner": "ajka",
+    "product": "rice",
+    "category": "grocery",
+    "quantity": 35,
+    "unit": "kg"
+  },
+  {
+    "id": 1783362696870,
+    "owner": "ajka",
+    "product": "paddy",
+    "category": "grocery",
+    "quantity": 35,
+    "unit": "kg"
+  },
+  {
+    "id": 1783441903391,
+    "owner": "ajka",
+    "product": "milk",
+    "category": "Transferred",
+    "quantity": 10,
+    "unit": "pcs"
+  },
+  {
+    "id": 1783441903919,
+    "owner": "ajka",
+    "product": "suger",
+    "category": "Transferred",
+    "quantity": 20,
+    "unit": "pcs"
+  },
+  {
+    "id": 1783532078851,
+    "owner": "ajka",
+    "product": "rubber",
+    "category": "for tyre",
+    "quantity": "10",
+    "unit": "pcs"
+  }
+]

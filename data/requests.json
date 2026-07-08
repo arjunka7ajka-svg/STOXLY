@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1783273037469,
+    "owner": "ajka",
+    "product": "suger",
+    "quantity": "10",
+    "reason": "out of stock",
+    "status": "Approved"
+  },
+  {
+    "id": 1783364330342,
+    "owner": "ajka",
+    "product": "milk",
+    "quantity": "5",
+    "reason": "outofstock",
+    "status": "Approved"
+  },
+  {
+    "id": 1783441100904,
+    "owner": "ajka",
+    "product": "paddy",
+    "quantity": "10",
+    "reason": "outofstock",
+    "status": "Approved"
+  },
+  {
+    "id": 1783441608472,
+    "owner": "ajka",
+    "product": "rice",
+    "quantity": "10",
+    "reason": "urgent",
+    "status": "Approved"
+  },
+  {
+    "id": 1783532101339,
+    "owner": "ajka",
+    "product": "rice",
+    "quantity": "5",
+    "reason": "needed more",
+    "status": "Approved"
+  }
+]

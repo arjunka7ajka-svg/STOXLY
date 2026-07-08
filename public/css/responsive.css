@@ -1,0 +1,31 @@
+@media(max-width:768px){
+
+.hero-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:34px;
+}
+
+nav ul{
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+/* Homepage Sections */
+
+@media(max-width:768px){
+
+.feature-grid{
+    grid-template-columns:1fr;
+}
+
+.steps{
+    grid-template-columns:1fr;
+}
+
+}
