@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // ======================
 // Middleware
@@ -477,6 +477,10 @@ app.put("/api/requests/:id", (req, res) => {
 // ======================
 
 app.listen(PORT, () => {
+
+    console.log(`🚀 STOXLY Running on Port ${PORT}`);
+
+});
 
     console.log("");
     console.log("======================================");
