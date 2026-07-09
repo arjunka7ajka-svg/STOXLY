@@ -477,16 +477,10 @@ app.put("/api/requests/:id", (req, res) => {
 // ======================
 
 app.listen(PORT, () => {
-
-    console.log(`🚀 STOXLY Running on Port ${PORT}`);
-
-});
-
     console.log("");
     console.log("======================================");
     console.log("🚀 STOXLY MVP SERVER RUNNING");
     console.log(`🌐 http://localhost:${PORT}`);
     console.log("======================================");
     console.log("");
-
 });
